@@ -1,8 +1,8 @@
-import Links from "./links/links";
+import Links from "./links/Links";
 
 export default function Navbar() {
     return (
-      <div>
+      <div className="container">
         <div>Logo</div>
         <div>
           <Links />
