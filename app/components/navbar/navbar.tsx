@@ -1,8 +1,13 @@
+import Links from "./links/links";
+
 export default function Navbar() {
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <h1>Navbar</h1>
-      </main>
+      <div>
+        <div>Logo</div>
+        <div>
+          <Links />
+        </div>
+      </div>
     );
   }
 
