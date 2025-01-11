@@ -7,6 +7,8 @@ import styles from "./home.module.css";
 
 export default function Home() {
   const [isOptimized, setIsOptimized] = React.useState(true);
+  const [Optimized, setOptimized] = React.useState(true);
+
   return (
     <div className={styles.container}>
 
@@ -23,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className={styles.brands}>
-          <Image src= "/brands.png" alt= "" fill unoptimized={!isOptimized} className={styles.brandImg} onError={() => {setIsOptimized(false);}} />
+          <Image src= "/brands.png" alt= "" fill unoptimized={!Optimized} className={styles.brandImg} onError={() => {setOptimized(false);}} />
         </div>
       </div>
 
