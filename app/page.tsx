@@ -1,8 +1,12 @@
+"use client"
+
+import React from "react";
 import Image from 'next/image';
 import styles from "./home.module.css";
 
 
 export default function Home() {
+  const [isOptimized, setIsOptimized] = React.useState(true);
   return (
     <div className={styles.container}>
 
@@ -24,7 +28,7 @@ export default function Home() {
       </div>
 
       <div className={styles.imgContainer}>
-        <Image src= "/hero.gif" alt= "" fill className={styles.heroImg} />
+        <Image src= "/hero.gif" alt= "" fill unoptimized={!isOptimized} className={styles.heroImg} onError={() => {setIsOptimized(false);}} />
       </div>
     </div>
   );
