@@ -1,0 +1,14 @@
+.container {
+	display:flex;
+	gap:100px;
+}
+
+.imgContainer {
+		flex:1;
+		position: relative;
+		height:500px;
+}
+
+.img{
+	object-fit: contain;
+}

@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         <div className={styles.brands}>
-          <Image src= "/brands.png" alt= "" fill className={styles.brandImg} />
+          <Image src= "/brands.png" alt= "" fill unoptimized={!isOptimized} className={styles.brandImg} onError={() => {setIsOptimized(false);}} />
         </div>
       </div>
 
