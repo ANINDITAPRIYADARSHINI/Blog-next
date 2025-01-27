@@ -3,8 +3,11 @@
 import React from "react";
 import NavLink from "./navLink/NavLink";
 import styles from "./links.module.css";
+import Image from "next/image";
 
 export default function Links() {
+
+  const [isOptimized, setIsOptimized] = React.useState(true);
 
   const links = [
     {
@@ -53,7 +56,7 @@ export default function Links() {
         )}
       </div>
 
-      <button className = {styles.menuButton} onClick={() => setOpen((prev) => !prev)}> Menu </button>
+      <Image className = {styles.menuButton} src="/menu.png" alt="" width={30} height={30} unoptimized={!isOptimized} onError={() => {setIsOptimized(false);}} onClick={() => setOpen((prev) => !prev)}/>
       {
         open && (
           <div className={styles.mobileLinks}>
