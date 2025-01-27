@@ -20,7 +20,7 @@ export default function SinglePostPage() {
           <h1 className={styles.title}>Hello</h1>
 
           <div className={styles.detail}>
-            <Image src="/noavatar.png" alt="" fill unoptimized={!optimized} className={styles.avatar} onError={() => {setOptimized(false);}} />
+            <Image src="/noavatar.png" alt="" width={50} height={50} unoptimized={!optimized} className={styles.avatar} onError={() => {setOptimized(false);}} />
 
             <div className={styles.detailText}>
               <span className={styles.detailTitle}>Abc</span>
