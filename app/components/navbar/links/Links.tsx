@@ -1,10 +1,8 @@
 "use client"
 
 import React from "react";
-import styles from "./links.module.css";
 import NavLink from "./navLink/NavLink";
-import Link from "next/link";
-import { link } from "fs/promises";
+import styles from "./links.module.css";
 
 export default function Links() {
 
