@@ -5,6 +5,10 @@ import styles from "./contact.module.css";
 
 
 export default function ContactPage() {
+
+  const a = 1; 
+  console.log(a)
+
   const [isOptimized, setIsOptimized] = React.useState(true);
     return (
       <div className={styles.container}>
@@ -14,6 +18,7 @@ export default function ContactPage() {
         </div>
 
         <div className={styles.formContainer}>
+          {a}
           <form action="" className={styles.form}>
             <input type="text" placeholder="Name and Surname" />
             <input type="text" placeholder="Email Address" />
