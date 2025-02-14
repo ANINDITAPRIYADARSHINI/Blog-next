@@ -5,9 +5,15 @@ import styles from "./contact.module.css";
 
 
 export default function ContactPage() {
+  const [isClient, setIsClient] = React.useState(false);
 
-  const a = 1; 
-  console.log(a)
+
+  React.useEffect(() => {
+    setIsClient(true);
+  }, [])
+  const a = Math.random();
+
+  console.log(a);
 
   const [isOptimized, setIsOptimized] = React.useState(true);
     return (
@@ -18,7 +24,7 @@ export default function ContactPage() {
         </div>
 
         <div className={styles.formContainer}>
-          {a}
+          {isClient && a}
           <form action="" className={styles.form}>
             <input type="text" placeholder="Name and Surname" />
             <input type="text" placeholder="Email Address" />
