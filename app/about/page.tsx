@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./about.module.css";
 
 export default function AboutPage() {
+  console.log("lets check")
   const [isOptimized, setIsOptimized] = React.useState(true);
   return (
     <div className= {styles.container}>
