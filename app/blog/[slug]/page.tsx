@@ -5,10 +5,14 @@ import styles from "./singlePost.module.css";
 
 
 
-export default function SinglePostPage() {
+export default function SinglePostPage({params="string"}) {
+
+
+
   const [isOptimized, setIsOptimized] = React.useState(true);
   const [optimized, setOptimized] = React.useState(true);
 
+  console.log(params)
     return (
       <div className={styles.container}>
         
