@@ -4,19 +4,11 @@ import Image from "next/image";
 import styles from "./singlePost.module.css";
 import PostCard from "@/app/components/postCard/PostCard";
 
-const getData = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts")
 
-  if(!res.ok){
-    throw new Error("Something is wrong")
-  }
-
-  return res.json()
-}
 
 export default async function SinglePostPage() {
 
-  const posts = await getData();
+
 
   
 
